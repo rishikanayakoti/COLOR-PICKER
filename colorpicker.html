@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color sampler</title>
+    <link rel="stylesheet" href="1.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Color Sampler</h1>
+
+    <br/>
+    <br/>
+    <br/>
+
+    <div class="x-container">
+    
+    <div class="wrapper">
+        
+    <div class="container">
+        <img id="image" src="x.jpg" />
+    </div>
+    <div class="btns-container">
+        <input type="file" id="file" accesskey="image/*" />
+        <label for="file">upload a Photo</label>
+        <button id="pick-color">choose Color</button>
+    </div>
+    <div id="error" class="hide"></div>
+    <div id="result" class="hide">
+        <div>
+            <input type="text" id="hex-val-ref" />
+            <button onclick="copy('hex-val-ref')">
+                <i class="fa-regular fa-copy"></i>
+            </button>
+        </div>
+        <div>
+            <input type="text" id="rgb-val-ref" />
+            <button onclick="copy('rgb-val-ref')">
+                <i class="fa-regular fa-copy"></i>
+            </button>
+        </div>
+        <div id="picked-color-ref"></div>
+    </div>
+    <div id="custom-alert">Color Code Copied!</div>
+    </div>
+    <img id="panda" src="https://thumbs.dreamstime.com/b/panda-introduces-something-vector-illustration-isolated-white-background-panda-introduces-something-236593163.jpg">
+</div>
+    <!-- Script -->
+    <script src="1.js"></script>
+
+</body>
+
+</html>
